@@ -1,6 +1,6 @@
 public with sharing class newsWrapperFullClass {
         private static final String URL = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=13415a3258eb40cb95bec0c001cdd11e';
-         //   public List<NewsWrapper> newsData {get;set;}
+         //   public List<NewsWrapper> newsData {get;set;} 
         @AuraEnabled
         public static NewsWrapper getNews() {
         NewsWrapper newsData = new NewsWrapper();
