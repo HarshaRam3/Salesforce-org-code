@@ -1,0 +1,98 @@
+<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+    <thead>
+    <tr class="slds-line-height_reset">
+   <th class="" scope="col">
+<div class="slds-truncate" >
+ Guest Name
+ </div>
+</th> 
+ <th class="" scope="col">
+<div class="slds-truncate" >
+   Male Guest Name
+</div>
+</th> 
+ <th class="" scope="col">
+<div class="slds-truncate" >
+        Female Guest Name
+ </div>
+  </th> 
+   </tr>
+    </thead>
+    <tbody>
+     <tr class="slds-hint-parent">
+        <th data-label="" scope="row">
+     <div class="slds-truncate" >
+    //Iterartion to load Guest List In A Guest table
+   <aura:iteration items="{!v.guestList}" var="guest">
+      <p>{!guest.Name}</p><br/>
+    </aura:iteration>
+      </div>
+       </th>
+       <th  scope="row">
+     <div class="slds-truncate" >
+    //Iterartion to load Male Guest List In A Guest table
+    <aura:iteration items="{!v.maleList}" var="male">
+      <p>{!male.Name}</p><br/>
+    </aura:iteration>
+    </div>
+     </th>
+    <th  scope="row">
+   <div class="slds-truncate" >
+   //Iterartion to load Female Guest List In A Guest table
+   <aura:iteration items="{!v.femaleList}" var="female">
+     <p>{!female.Name}</p><br/>
+     </aura:iteration>
+      </div>
+      </th>
+     </tr>
+    </tbody>
+</table>
+=========================================================================
+Working <code>
+
+</code>
+
+
+<!--<table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="News Title">Title</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="News Author">Author</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="News Description">Description</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="url">URL</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="urlToImage">urlToImage</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.News.articles }" var="con">
+                <tr>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.title}">{!con.title}</div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.author}">{!con.author}</div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.description}">{!con.description}</div>
+                    </th>
+                    <th scope="row">
+                        <a href="{!con.url}">&nbsp;</a>
+                        <div class="slds-truncate" title="{!con.url}">{!con.url}</div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate" title="{!con.urlToImage}">{!con.urlToImage}</div>
+                    </th>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>-->
